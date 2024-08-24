@@ -84,7 +84,7 @@ async function fetchData(comapnyObject) {
     const { cloudHost, account, company, accountId, companyId } = comapnyObject; // extract required context from event content
     const header = {
         "Content-Type": "application/json",
-        "X-Client-ID": "000179c6-c140-44ec-b48e-b447949fd5c9",
+        "X-Client-ID": "000179c8-bf21-47ed-803d-6a8c3739dfde",
         "X-Client-Version": "1.0",
         "Authorization": `bearer ${sessionStorage.getItem('token')}`,
         "X-Account-ID": accountId,
@@ -124,7 +124,7 @@ async function fetchData(comapnyObject) {
                         const { cloudHost, accountId, companyId } = comapnyObject;
                         const header = {
                             "Content-Type": "application/json",
-                            "X-Client-ID": "000179c6-c140-44ec-b48e-b447949fd5c9",
+                            "X-Client-ID": "000179c8-bf21-47ed-803d-6a8c3739dfde",
                             "X-Client-Version": "1.0",
                             "Authorization": `bearer ${sessionStorage.getItem('token')}`,
                             "X-Account-ID": accountId,
