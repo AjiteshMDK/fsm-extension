@@ -28,7 +28,7 @@ function createMapUrlAndAddItemToList(listId, responseData) {
             let { latitude, longitude } = add?.location ? add.location : { latitude: 0, longitude: 0 }; // if there's no lat and long data, we're defauilting to 0 & 0 so as to avoid the failure case
             let { id: activityId, code } = act;
             let mapDate = new Date().toISOString().substring(0, 10);
-            let mapUrlForCurrentActivity = `https://us.coresystems.net/shell/#/planning-dispatching/map/${mapDate}/${latitude},${longitude},z11/activities/${activityId}`;
+            let mapUrlForCurrentActivity = `https://us.fsm.cloud.sap/shell/#/planning-dispatching/map/${mapDate}/${latitude},${longitude},z11/activities/${activityId}`;
             let itemText = `${scall.code} - Map`;
             addItemToList(listId, mapUrlForCurrentActivity, itemText);
         })
